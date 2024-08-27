@@ -1,5 +1,6 @@
 import React from "react";
 import { Title } from "./components/Title";
+import { Layout } from "./components/Layout";
 
 export const Skill = () => {
   return (
