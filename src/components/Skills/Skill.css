@@ -1,7 +1,12 @@
 /* <!-- skills section  --> */
 .skills {
+  justify-content: center;
   margin-top: 10px;
-  padding-top: 7rem;
+  margin-left: 60px;
+  padding-top: 1rem;
+  background: var(--body-bg);
+  width: 90%;
+  border-radius: 5px;
 }
 .skills-container {
   justify-content: space-between;

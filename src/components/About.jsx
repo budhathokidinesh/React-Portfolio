@@ -3,30 +3,37 @@ import db from "../assets/db.png";
 import { Title } from "./Title";
 export const About = () => {
   return (
-    <section className="about" id="about">
+    <section className=" container about" id="about">
       <Title title="About Me" />
-      <div className="container flex about-content">
-        <div className="flex-center myImg">
-          <img src={db} alt="Dinesh's Img" width="100%" />
-        </div>
+      <div className=" flex about-content">
         <div className="my-bio container">
           <h2>Dinesh Budhathoki</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut
-            similique fuga, tenetur exercitationem quidem. Vitae obcaecati
-            repellat at eveniet nisi, tenetur minus itaque reprehenderit eius
-            est dolorem deleniti voluptate. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Illo, quidem voluptatum est quod
-            eveniet soluta voluptas hic cumque odio ab doloremque nemo autem
-            laudantium distinctio mollitia reiciendis quia consequatur ipsa!
+          <p style={{ textAlign: "justify" }}>
+            As a FullStack Developer, I develop and maintain MERN FullStack web
+            applications, ensuring high performance, responsive and secure
+            applications. I write clean, efficient, secured and well
+            maintainable code using HTML, CSS, JavaScript, TypeScript, NodeJs,
+            ExpressJs and MogoDb and optimize applications for maximum speed,
+            and scalability.
+            <br /> <br />{" "}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I have a
+            Master's degree in Information Technology Systems from Victorian
+            Institute of Technology with grade A. I have experience in working
+            with front-end and back-end technologies, such as React, Redux,
+            Node, Express and MongoDb. I have also worked on projects using
+            CI/CD and cloud services. I am hardworking, focused, optimistic and
+            friendly person who works well with others and takes pride in
+            delivering high-quality solution and meet client requirements and
+            user needs.
           </p>
-          <p>Perth, Australia</p>
+          <p>Perth,&nbsp; Australia</p>
           <div>
             <div className="tag">Interests</div>
             <div className="flex">
-              <span>coding</span>
-              <span>History</span>
+              <span>Coding</span>
+              <span>Reading</span>
               <span>Travelling</span>
+              <span>Fitness</span>
             </div>
           </div>
         </div>

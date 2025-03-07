@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export const Footer = () => {
   const [scrollYPosition, setScrollYPosition] = useState(0);
@@ -24,7 +24,7 @@ export const Footer = () => {
             <h3>Links</h3>
             <ul>
               <li>
-                <a href="#hero">Home</a>
+                <a href="#intro">Home</a>
               </li>
               <li>
                 <a href="#skills">Skills</a>
@@ -38,29 +38,33 @@ export const Footer = () => {
             </ul>
           </div>
           <div className="socials">
-            <h3>Social LInks</h3>
+            <h3>Social</h3>
             <ul>
               <li>
-                <a href="">LinkedIn</a>
+                <a
+                  href="https://www.linkedin.com/in/dineshbudhathoki"
+                  target="_blank"
+                >
+                  Linkedin
+                </a>
               </li>
               <li>
-                <a href="">Github</a>
+                <a href="https://github.com/budhathokidinesh" target="_blank">
+                  GitHub
+                </a>
               </li>
               <li>
-                <a href="">Facebook</a>
-              </li>
-              <li>
-                <a href="">Facebook</a>
+                <a href="mailto: physmarika@gmail.com">Email</a>
               </li>
             </ul>
           </div>
         </div>
         <div className="bottom">
-          &copy; Copy right all reserved 2024 || Made by me with 🚀
+          &copy; Copy right all reserved to Dinesh Budhathoki || 2025 🚀
         </div>
       </footer>
       {scrollYPosition > 800 && (
-        <a href="#hero" className="goUp flex-center">
+        <a href="#intro" className="goUp flex-center">
           <i className="fa-solid fa-angle-up"></i>
         </a>
       )}
