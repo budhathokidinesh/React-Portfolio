@@ -1,0 +1,43 @@
+/* <!-- nav bar --> */
+header {
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  background: var(--body-bg);
+}
+.header {
+  top: 0;
+  /* background: var(--body-bg); */
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.logo {
+  font-size: 1.5rem;
+  position: relative;
+  gap: 1rem;
+}
+.logo :first-child {
+  font-weight: bold;
+  margin-right: 1rem;
+  font-family: "Joti One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.line::before {
+  content: "";
+  background: var(--color-orange);
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  left: 33%;
+}
+.navigation {
+  list-style: none;
+  font-weight: bold;
+}
+.navigation li:hover {
+  color: var(--color-orange);
+  scale: 1.1;
+  transition: all 0.3s;
+}

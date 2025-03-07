@@ -1,0 +1,65 @@
+.intro {
+  display: flex;
+  height: 60vh;
+  margin-top: 3rem;
+  width: 90%;
+  background: var(--body-bg);
+  border-radius: 10px;
+}
+/* This is for left side  */
+.i-left {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 1;
+  gap: 2rem;
+}
+
+.i-name {
+  display: flex;
+  flex-direction: column;
+}
+.i-name > :nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 2rem;
+}
+.i-name > :nth-child(2) {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 3rem;
+}
+.i-name > :nth-child(3) {
+  color: var(--grey);
+  font-weight: 100;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.i-button {
+  width: 6rem;
+  height: 2rem;
+  margin-top: 10px;
+}
+.i-icons {
+  display: flex;
+  gap: 0;
+}
+.i-icons > * {
+  transform: scale(0.5);
+}
+.i-icons > *:hover {
+  cursor: pointer;
+}
+/* This is for right side  */
+.i-right {
+  position: relative;
+  display: flex;
+  flex: 1;
+}
+.i-right > img {
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Ensure the image fills the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image fits within the container */
+}

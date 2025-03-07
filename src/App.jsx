@@ -2,10 +2,10 @@ import "./App.css";
 import { About } from "./components/About";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
-import { Hero } from "./components/Hero";
-import { Navbar } from "./components/Navbar";
+import { Hero } from "./components/Hero/Hero";
+import { Navbar } from "./components/Navbar/Navbar";
 import { Projects } from "./components/Projects";
-import { Skill } from "./Skill";
+import { Skill } from "./components/Skills/Skill";
 function App() {
   return (
     <>

@@ -1,6 +1,7 @@
-import React from "react";
-import { Title } from "./components/Title";
-
+import { Title } from "../Title";
+import "./Skill.css";
+import { DiMongodb } from "react-icons/di";
+import express from "../../assets/img/express.png";
 export const Skill = () => {
   return (
     <section className="skills" id="skills">
@@ -19,8 +20,18 @@ export const Skill = () => {
           <span>Javascript</span>
         </div>
         <div>
-          <i className="fa-brands fa-github" style={{ color: "black" }}></i>
-          <span>Github</span>
+          <i className="fa-brands fa-node-js" style={{ color: "orange" }}></i>
+          <span>NodeJs</span>
+        </div>
+        <div>
+          <img src={express} alt="" />
+          <span>ExpressJS</span>
+        </div>
+        <div>
+          <DiMongodb
+            style={{ color: "green", height: "50px", width: "45px" }}
+          />
+          <span>MongoDB</span>
         </div>
         <div>
           <i className="fa-brands fa-python" style={{ color: "orange" }}></i>
