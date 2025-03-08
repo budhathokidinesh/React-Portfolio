@@ -1,15 +1,18 @@
 /* <!-- nav bar --> */
 .h-wrapper {
+  width: 100%;
   box-shadow: var(--shadow);
   position: sticky;
   top: 0;
   background: var(--body-bg);
+  z-index: 1000;
 }
 .header {
   top: 0;
   display: flex;
   justify-content: space-between;
   padding: 2rem 4rem 2rem 4rem;
+  position: relative;
 }
 .logo {
   font-size: 1.5rem;
@@ -45,15 +48,19 @@
 }
 @media (max-width: 768px) {
   .links {
-    position: absolute;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-    margin-top: 2rem;
-    margin-left: 14rem;
-    transition: all 300ms ease-in !important;
+    position: fixed; /* Use fixed instead of absolute for full-screen overlay */
+    top: 5rem;
+    right: -100%; /* Start off-screen */
+    height: 200px;
+    width: 100px; /* Adjust as needed */
+    border-radius: 10px;
     background: var(--orange);
     box-shadow: var(--shadow);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.3s ease-in-out; /* Add transition */
+    z-index: 1000; /* Ensure menu is above other content */
   }
   .menu-icon {
     display: block;

@@ -18,7 +18,11 @@ export const Hero = () => {
               and seamless user experiences.
             </span>
           </div>
-          <button className="button i-button">Hire Me</button>
+          <a href="" target="_blank">
+            <button className="button i-button" href>
+              Hire Me
+            </button>
+          </a>
           <div className="i-icons">
             <a href="https://github.com/budhathokidinesh" target="_blank">
               <img src={Github} alt="" />
