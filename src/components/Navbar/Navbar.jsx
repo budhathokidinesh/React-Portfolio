@@ -1,51 +1,35 @@
 import { useState } from "react";
 import "./Navbar.css";
+import { IoMenu } from "react-icons/io5";
 
 export const Navbar = () => {
-  const [slideMenu, setSlideMenu] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const getMenuStyle = (menuOpen) => {
+    if (document.documentElement.clientWidth <= 800) {
+      return { right: !menuOpen && "-100%" };
+    }
+  };
   return (
-    <header>
-      <div className="header container flex">
+    <section className=" h-wrapper">
+      <div className="header">
         {/* Left side  */}
-        <div className="logo flex">
+        <div className=" flex logo">
           <div>Dinesh</div>
 
           <div>Full Stack Developer</div>
         </div>
-        <label htmlFor="hamburger" onClick={() => setSlideMenu(!slideMenu)}>
-          <i className="fa-solid fa-bars"></i>
-        </label>
-        <input type="checkbox" id="hamburger" />
-        {/* Right side  */}
-        <div className={slideMenu ? "menu slide" : "menu"}>
-          <ul
-            className="flex navigation"
-            onClick={() => setSlideMenu(!slideMenu)}
-          >
-            <li>
-              <a href="#intro">Home</a>
-            </li>
-            <li>
-              <a href="#skills">Skills</a>
-            </li>
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#projects">Education</a>
-            </li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <button className="button ">
-              <a href="#contact">Contact</a>
-            </button>
-            {/* <li>
-              <a href="#contact">Contact</a>
-            </li> */}
-          </ul>
+
+        <div className=" flex links" style={getMenuStyle(menuOpen)}>
+          <a href="#intro">Home</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#projects">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div className="menu-icon" onClick={() => setMenuOpen((prev) => !prev)}>
+          <IoMenu />
         </div>
       </div>
-    </header>
+    </section>
   );
 };

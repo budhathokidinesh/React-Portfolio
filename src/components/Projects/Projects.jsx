@@ -1,9 +1,9 @@
-import React from "react";
-import ps from "../assets/img/portfolio.png";
-import RealEstate from "../assets/img/RealEstate.png";
-import TimeManagement from "../assets/img/TimeManagement.png";
-import Movie from "../assets/img/Movie World.png";
-import { Title } from "./Title";
+import "./Projects.css";
+import ps from "../../assets/img/portfolio.png";
+import RealEstate from "../../assets/img/RealEstate.png";
+import TimeManagement from "../../assets/img/TimeManagement.png";
+import Movie from "../../assets/img/Movie World.png";
+import { Title } from "../Title.jsx";
 import { Card } from "./Card";
 
 export const Projects = () => {
@@ -39,12 +39,14 @@ export const Projects = () => {
     },
   ];
   return (
-    <section className="projects container" id="projects">
-      <Title title="My Projects" />
-      <div className="grid project-container">
-        {myProjects.map((project, i) => (
-          <Card key={i} {...project} />
-        ))}
+    <section className="w-projects">
+      <div className="projects" id="projects">
+        <Title title="My Projects" />
+        <div className="grid project-container">
+          {myProjects.map((project, i) => (
+            <Card key={i} {...project} />
+          ))}
+        </div>
       </div>
     </section>
   );

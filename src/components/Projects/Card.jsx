@@ -1,12 +1,12 @@
-import React from "react";
-import ps from "../assets/ps.png";
+import "./Projects.css";
+
 export const Card = ({ image, github, url, title, description }) => {
   return (
     <div className="project-card">
       <div className="top">
         <img src={image} alt="" width="100%" height="250px" />
       </div>
-      <div className="bottom container">
+      <div className="bottom">
         <div className="links">
           <a href={github} target="_blank">
             <i
@@ -25,8 +25,10 @@ export const Card = ({ image, github, url, title, description }) => {
             ></i>
           </a>
         </div>
-        <h3>{title}</h3>
-        <p>{description}</p>
+        <div className="name-des">
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
       </div>
     </div>
   );

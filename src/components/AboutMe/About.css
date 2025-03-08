@@ -1,0 +1,66 @@
+/* <!-- about section --> */
+.w-about {
+  margin-top: 2rem;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 90%;
+  background: rgba(216, 235, 95, 0.304);
+  border-radius: 10px;
+  padding: 2rem;
+}
+.my-bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-bio h2 {
+  flex-direction: 1;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.my-bio p {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.my-bio .tag {
+  color: #ec8314;
+}
+.about .my-bio p:nth-child(3),
+.my-bio .tag {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.my-bio .tag + div > span {
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+}
+.my-bio .tag + div > span:hover {
+  background: rgb(123, 123, 228);
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+@media (max-width: 768px) {
+  .my-bio h2 {
+    margin-top: 0.5rem;
+  }
+  .my-bio p {
+    margin-top: 5px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .flex {
+    margin: auto;
+  }
+  .interest {
+    gap: 1px;
+  }
+}

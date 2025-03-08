@@ -1,8 +1,10 @@
 /* <!-- skills section  --> */
+.s-skills {
+  margin-top: 2rem;
+}
 .skills {
   justify-content: center;
-  margin-top: 10px;
-  margin-left: 60px;
+  margin: auto;
   padding-top: 1rem;
   background: var(--body-bg);
   width: 90%;
@@ -10,7 +12,7 @@
 }
 .skills-container {
   justify-content: space-between;
-  flex-wrap: wrap;
+  padding: 2rem;
 }
 .skills-container > div {
   display: flex;
@@ -19,4 +21,12 @@
 }
 .skills-container > div i {
   font-size: 3rem;
+}
+@media (max-width: 768px) {
+  .skills-container {
+    padding-top: 1rem;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
